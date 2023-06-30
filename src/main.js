@@ -7,7 +7,7 @@ import TextToBase64 from './components/TextToBase64.vue';
 import FileToBase64 from './components/FileToBase64.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
